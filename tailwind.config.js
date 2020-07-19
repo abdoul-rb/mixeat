@@ -12,7 +12,8 @@ module.exports = {
     },
     fontFamily: {
         'fondamento': ['Fondamento', 'cursive'],
-        'noto': ['"Noto Serif"', 'serif']
+        'noto': ['"Noto Serif"', 'serif'],
+        'ubuntu': ['Ubuntu', 'sans-serif'],
     },
   },
   variants: {},

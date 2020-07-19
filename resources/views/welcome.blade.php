@@ -1,41 +1,42 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Mixeat - Homepage</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-    </head>
-    <body class="bg-white">
-        @include('components.nav')
-        <article class="bg-pink-mix-1 w-full rounded-br-large">
-            <div class="container flex">
-                <div class="w-1/2 text-gray-900 py-16">
-                    <strong class="block text-4xl font-medium tracking-wide">Fresh juice</strong>
-                    <strong class="block text-4xl font-medium tracking-wide">Homemade smoothie</strong>
-                    <em class="block text-4xl font-medium not-italic tracking-wide">from best fruits</em>
-                    <p class="text-sm tracking-tighter mt-4 mr-32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi autem dolor eligendi error ex fuga fugit iusto.</p>
+@extends('layouts.app')
+@section('title') Accueil @endsection
+@section('content')
+    <div class="relative bg-white overflow-hidden mt-20">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="50,0 100,0 50,100 0,100" />
+                </svg>
+                <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
                 </div>
-                <div class="w-1/2 px-20">
-                    <img src="{{ asset('images/douglas-bagg.png') }}" alt="" class="w-1/2">
-                </div>
+                <main class="mx-auto max-w-screen-xl px-4 sm:mt-6 sm:px-6 md:mt-6 lg:mt-20 lg:px-8 xl:mt-6">
+                    <div class="sm:text-center lg:text-left">
+                        <h2 class="text-3xl tracking-wide leading-10 font-bold text-blue-900 sm:text-4xl sm:leading-none md:text-5xl">
+                            Fresh juice <br>
+                            Homemade smoothie <br>
+                            <br class="xl:hidden">
+                            <span class="text-indigo-600">From best fruits</span>
+                        </h2>
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                            Notre mission : donner de l’énergie et rendre les gens heureux grâce à des recettes saines élaborées avec des produits frais et de saison.
+                        </p>
+                        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+                            <div class="rounded-md shadow">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">Get started</a>
+                            </div>
+                            <div class="mt-3 sm:mt-0 sm:ml-3">
+                                <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">Live demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-        </article>
-        <section class="container py-8">
-            <h1 class="font-noto text-green-700 text-4xl font-bold tracking-wide" id="menus">The Happiest hour of the year</h1>
-            <p class="text-gray-700 text-sm font-medium leading-relaxed">
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, asperiores autem cupiditate dolore ex exercitationem fuga iure labore magni minima minus nobis officia officiis, perspiciatis possimus similique velit. Libero, odit.</span>
-            </p>
-            <div class="my-10">
-                <div class="bg-gray-200 h-24 max-w-xs shadow-md rounded-md transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 px-6 py-4">
-                    <div class="text-sm font-medium font-black">Monster Mango</div>
-                </div>
-            </div>
-        </section>
-    </body>
-</html>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1554068919-741e3c8bd213?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="">
+        </div>
+    </div>
+    <section class="max-w-6xl mx-auto py-8">
+
+    </section>
+@endsection

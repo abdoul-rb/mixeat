@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap);/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css2?family=Fondamento&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -6225,6 +6225,10 @@ video {
 
 .font-noto{
   font-family: "Noto Serif", serif;
+}
+
+.font-ubuntu{
+  font-family: Ubuntu, sans-serif;
 }
 
 .font-hairline{
@@ -25055,6 +25059,10 @@ body {
     font-family: "Noto Serif", serif;
   }
 
+  .sm\:font-ubuntu{
+    font-family: Ubuntu, sans-serif;
+  }
+
   .sm\:font-hairline{
     font-weight: 100;
   }
@@ -43870,6 +43878,10 @@ body {
 
   .md\:font-noto{
     font-family: "Noto Serif", serif;
+  }
+
+  .md\:font-ubuntu{
+    font-family: Ubuntu, sans-serif;
   }
 
   .md\:font-hairline{
@@ -62689,6 +62701,10 @@ body {
     font-family: "Noto Serif", serif;
   }
 
+  .lg\:font-ubuntu{
+    font-family: Ubuntu, sans-serif;
+  }
+
   .lg\:font-hairline{
     font-weight: 100;
   }
@@ -81504,6 +81520,10 @@ body {
 
   .xl\:font-noto{
     font-family: "Noto Serif", serif;
+  }
+
+  .xl\:font-ubuntu{
+    font-family: Ubuntu, sans-serif;
   }
 
   .xl\:font-hairline{
